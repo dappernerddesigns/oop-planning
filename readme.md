@@ -32,6 +32,14 @@ deactivate
 
 ---
 
+💡 You may want to use print statements along side returns to see your classes in action. By default, Pytest shows your print statements on failing tests. This is not super useful to see your great work in action. A handy flag to show your statements in your passing test suite would look like this:
+
+```sh
+PYTHONPATH=$(pwd) pytest -vrP test/test_file_name.py
+```
+
+This will then show your print statement on all passing tests. 💡
+
 ### Task 1 - Create a Component Class
 
 Create a `Component` class. Each component will only have a certain lifespan (measured by the number of uses) and different components could have different lifespans.
